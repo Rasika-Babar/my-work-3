@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+  background-image:url("data:image/png;base64,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");
+  background-repeat: no-repeat;
+  background-size: cover;
+min-height: 100%;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+image:url("https://images4.alphacoders.com/378/37864.jpg");
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #ddd;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: "000";
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #fff;
+  color: #000;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>weakup</li>
+  <li class="checked">breakfast</li>
+  <li>online classes</li>
+  <li>lunch</li>
+  <li>Reading</li>
+  <li>Dinner</li>
+</ul>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
